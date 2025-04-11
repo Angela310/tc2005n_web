@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+
 a {
     color:rgb(255, 7, 185)
     /* margin: 5px 10px 20px 30px */
@@ -40,12 +41,9 @@ html, body {
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    background: url('../imagenes/IMG_6255.JPG') no-repeat;
     background-size: cover;
     background-position: center;
   }
-  
-  
   
   .wrapper form {
     background: rgba(255, 255, 255, 0.2);
@@ -128,3 +126,20 @@ html, body {
     margin-left: 25px;
     margin-right: 25px;
   }
+
+  /* Estilos para el cuadro de error */
+.error-message {
+  text-align: center;
+  background-color: #f8d7da; /* Fondo rojo claro */
+  color: #721c24; /* Color de texto rojo */
+  border: 1px solid #f5c6cb; /* Borde rojo claro */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+/* Estilo específico para el texto de error */
+#error-text {
+  margin: 0;
+  font-weight: bold;
+}
