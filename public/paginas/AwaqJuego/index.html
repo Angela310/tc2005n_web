@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity Web Player | AWAQ - Capacitaciones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -12,17 +13,17 @@
     <!-- Navbar -->
         <nav class="navbar navbar-expand-lg custom-navbar">
           <div class="container-fluid">
-              <a id="profile_id" class="navbar-brand" href="./inicio.html">| Angela |</a>
+              <a id="profile_id" class="navbar-brand" href="../inicio.html">| Angela |</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                          <a id="profile_id" class="nav-link active" aria-current="page" href="../index.html">Log in</a>
+                          <a id="profile_id" class="nav-link active" aria-current="page" href="../../index.html">Log in</a>
                       </li>
                       <li class="nav-item">
-                          <a id="profile_id" class="nav-link" href="./tags.html">Tags</a>
+                          <a id="profile_id" class="nav-link" href="../tags.html">Tags</a>
                       </li>
                       <li class="nav-item dropdown">
                           <a id="profile_id" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,7 +38,8 @@
                           </ul>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                          <a class="nav-link disabled" aria-disabled="true">El medio círculo cortado que aparece en la esquina superior<br>derecha, a un lado de EcoRanger es para hacer login | DALE CLICK</a>
+
                       </li>
                   </ul>
                   <form class="d-flex" role="search">
@@ -195,6 +197,15 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('logout-btn').addEventListener('click', function () {
+      localStorage.clear();
+      sessionStorage.clear();
+      window.location.href = '../../index.html';
+    });
+  });
+</script>
 
   </body>
 </html>
